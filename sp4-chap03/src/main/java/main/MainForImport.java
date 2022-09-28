@@ -22,7 +22,7 @@ public class MainForImport {
 
 	public static void main(String[] args) throws IOException {
 		String[] conf = { "classpath:cons/configImport.xml" };
-		ctx = new GenericXmlApplicationContext(conf);
+		ctx = new GenericXmlApplicationContext("classpath:cons/configImport.xml");
 
 		BufferedReader reader =
 				new BufferedReader(new InputStreamReader(System.in));
